@@ -88,7 +88,7 @@ Window {
     Comp{
         id:hat_bottom
         bcolor:"red"
-        height: 50; width: beard.width;
+        height: 50; width: 320;
         anchors.bottom: beard.top
         anchors.horizontalCenter: parent.horizontalCenter;
     }

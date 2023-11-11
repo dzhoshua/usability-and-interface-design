@@ -11,7 +11,7 @@ Window {
     Comp{
         id: header
         ctext:"Header"
-        height: win.height/6
+        height: win.height/9
         anchors.top: parent.top
         anchors.left: parent.left
         anchors.right:parent.right
@@ -34,7 +34,7 @@ Window {
         anchors.left: parent.left
         anchors.right:parent.right
         anchors.bottom: parent.bottom
-        height:win.height/6
+        height:win.height/9
 
         Comp{
             id:elem1

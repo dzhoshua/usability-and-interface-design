@@ -17,52 +17,49 @@ Window {
 
         RowLayout{
             id:header
-            anchors.top:parent.top
+            Layout.minimumHeight: win.height/9
+            Layout.minimumWidth: parent.width
             Comp{
                 ctext:"Header"
-                height: win.height/9
                 Layout.fillWidth: true
+                Layout.fillHeight: true
             }
 
         }
         RowLayout{
             id: content
-            //anchors.leftMargin: 20
+            Layout.minimumHeight: (parent.height/9)*7-2*container.spacing
+            Layout.minimumWidth: parent.width-2*container.spacing
+            Layout.leftMargin: container.spacing
+            Layout.rightMargin: container.spacing
             Comp{
                 ctext:"content"
                 cborder:"lightgrey"
                 ccolor:"white"
-                Layout.leftMargin: 10
-                Layout.rightMargin: 10
                 Layout.fillHeight: true
                 Layout.fillWidth: true
             }
         }
         RowLayout{
             id: footer
-            anchors.bottom:parent.bottom
+            Layout.minimumHeight: win.height/9
             spacing:5
             Comp{
                 ctext:"1"
-                height: win.height/9
-                width: win.width/3
-                Layout.alignment: Qt.AlignLeft
+                Layout.minimumWidth: win.width/3
+                Layout.fillHeight: true
             }
             Comp{
                 ctext:"2"
-                height: win.height/9
-                width: win.width/3
-                Layout.alignment: Qt.AlignCenter
+                Layout.minimumWidth: win.width/3-2*footer.spacing
+                Layout.fillHeight: true
             }
             Comp{
                 ctext:"3"
-                height: win.height/9
-                width: win.width/3
-                Layout.alignment: Qt.AlignRight
+                Layout.minimumWidth: win.width/3
+                Layout.fillHeight: true
             }
 
         }
     }
-
-
 }

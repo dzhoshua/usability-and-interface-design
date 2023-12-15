@@ -28,12 +28,12 @@ ApplicationWindow {
             spacing: 10
             Button {
                 text: "Log In"
-                width: username.width/2-5
+                width: usernameField.width/2-5
                 font.pixelSize: 16
             }
             Button {
                 text: "Clear"
-                width: username.width/2-5
+                width: usernameField.width/2-5
                 font.pixelSize: 16
                 onClicked: {
                     usernameField.text = ""
